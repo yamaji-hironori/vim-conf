@@ -1,0 +1,63 @@
+{
+    "editor.renderControlCharacters": false,
+    "editor.rulers": [
+        80
+    ],
+    "window.zoomLevel": 0,
+    "python.defaultInterpreterPath": "/Users/hironori-yamaji/.pyenv/shims/python",
+
+    // ------------------------------------------------------------------------
+    // vim 設定
+    // ------------------------------------------------------------------------
+    "vim.useSystemClipboard": true,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.visualstar": true,
+    "vim.insertModeKeyBindings": [
+        {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+        "before": ["<C-h>"],
+        "after": ["1", "0", "h"]
+        },
+        {
+        "before": ["<C-j>"],
+        "after": ["1", "0", "j"]
+        },
+        {
+        "before": ["<C-k>"],
+        "after": ["1", "0", "k"]
+        },
+        {
+        "before": ["<C-l>"],
+        "after": ["1", "0", "l"]
+        },
+        {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+        },
+        {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ]
+}
