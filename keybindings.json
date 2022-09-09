@@ -22,6 +22,26 @@
         "key": "ctrl+;",
         "command": "workbench.action.focusFirstEditorGroup",
         "when": "terminalFocus"
-    }
-
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.previousEditor",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.nextEditor",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+/",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+/",
+        "command": "-editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
 ]
+
